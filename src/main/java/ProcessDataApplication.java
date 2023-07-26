@@ -16,6 +16,23 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
 
+//          funda_utrecht.arrow data :
+//            ("id", pa.int32()),
+//            ("latitude", pa.float32()),
+//            ("longitude", pa.float32()),
+//            ("floor_area", pa.int16()),
+//            ("plot_area", pa.int32()),
+//            ("city", pa.string()),
+//            ("neighbourhood", pa.string()),
+//            ("postal_code", pa.string()),
+//            ("street_name", pa.string()),
+//            ("house_number", pa.string()),
+//            ("selling_price", pa.int32()),
+//            ("energy_label", pa.string()),
+//            ("construction_period", pa.string()),
+//            ("number_of_rooms", pa.int8()),
+//            ("number_of_bedrooms", pa.int8()),
+
 public class ProcessDataApplication {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ProcessDataApplication.class);
@@ -153,25 +170,6 @@ public class ProcessDataApplication {
 
         return selectedIndexes;
     }
-//
-//    schema = pa.schema([
-//            ("id", pa.int32()),
-//            ("latitude", pa.float32()),
-//            ("longitude", pa.float32()),
-//            ("floor_area", pa.int16()),
-//            ("plot_area", pa.int32()),
-//            ("city", pa.string()),
-//            ("neighbourhood", pa.string()),
-//            ("postal_code", pa.string()),
-//            ("street_name", pa.string()),
-//            ("house_number", pa.string()),
-//            ("selling_price", pa.int32()),
-//            ("energy_label", pa.string()),
-//            ("construction_period", pa.string()),
-//            ("number_of_rooms", pa.int8()),
-//            ("number_of_bedrooms", pa.int8()),
-//            ])
-
 
     //     Search neighbourhoods based on their names with the "".getBytes
     private IntArrayList filterOnNeighbourhood(VectorSchemaRoot schemaRoot) {
